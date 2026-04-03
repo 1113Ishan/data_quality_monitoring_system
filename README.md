@@ -31,10 +31,6 @@ The data flows from raw datasets through Python scripts, which perform checks an
 
 The loader.py module loads CSV datasets into Pandas DataFrames. It handles parsing dates, standardizing column names, and type conversion to prepare data for validation.
 
-Example:
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   orders = pd.read_csv('orders.csv', parse_dates=['order_purchase_timestamp'])   `
-
 ### Validation Checks (checks.py)
 
 The system runs multiple types of data quality checks:
@@ -119,33 +115,6 @@ The Power BI dashboard visualizes key metrics:
 
 This visualization helps stakeholders quickly understand the state of the data and identify areas requiring attention.
 
-Setup & Usage
--------------
-
-1.  **Clone the repository:**
-    
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   git clone https://github.com/1113Ishan/data_quality_monitoring_system.gitcd data_quality_monitoring_system   `
-
-1.  **Set up Python environment:**
-    
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   python -m venv venv# Activate environmentsource venv/bin/activate  # macOS/Linuxvenv\Scripts\activate     # Windowspip install -r requirements.txt   `
-
-1.  **PostgreSQL setup:**
-    
-
-*   Create a database and the required tables (data\_quality\_check and data\_pipeline\_runs)
-    
-*   Update db.py with your credentials
-    
-
-1.  **Run the pipeline:**
-    
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   python scripts/main.py   `
-
-The pipeline automatically loads datasets, runs checks, and logs results into the database. Refresh the Power BI dashboard to visualize the metrics.
 
 Reusability and Future Enhancements
 -----------------------------------
