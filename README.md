@@ -56,10 +56,6 @@ The system runs multiple types of data quality checks:
 
 Utility functions format validation results for SQL insertion. They convert Python objects, including NumPy types, into JSON-compatible formats and attach timestamps.
 
-Example formatted result:
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   {  "table_name": "orders",  "check_type": "duplicate_orders",  "check_result": 0,  "check_time": "2026-04-03T15:01:09"}   `
-
 ### Main Pipeline (main.py)
 
 The main script orchestrates the workflow:
