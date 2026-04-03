@@ -1,0 +1,108 @@
+3. Data Quality Monitoring System
+
+
+Companies care deeply about:
+
+Missing values
+
+Broken pipelines
+
+Data inconsistencies
+
+The Problem
+
+Data arrives daily from different sources.
+
+But:
+
+Some files are incomplete
+
+Some records are duplicated
+
+Some fields are missing
+
+Your job is to detect these issues automatically.
+
+Architecture
+Data Source
+   ↓
+Python Validation Script
+   ↓
+SQL Data Quality Tables
+   ↓
+Power BI Monitoring Dashboard
+Python Data Validation
+
+Checks like:
+
+Missing values
+
+df.isnull().sum()
+
+Duplicate records
+
+df.duplicated().sum()
+
+Schema validation
+
+Example:
+
+expected_columns = ['order_id','customer_id','amount']
+SQL Tables for Monitoring
+
+data_quality_checks
+
+check_id
+table_name
+check_type
+check_result
+check_time
+
+data_pipeline_runs
+
+run_id
+run_time
+status
+records_processed
+errors_detected
+Power BI Monitoring Dashboard
+
+Pages:
+
+Pipeline Status
+
+Shows:
+
+Last pipeline run
+
+Success / failure rate
+
+Data Quality Metrics
+
+Charts:
+
+Missing values
+
+Duplicate records
+
+Schema errors
+
+Data Freshness
+
+Tracks:
+
+Last data update
+
+Data latency
+
+Business Impact
+
+Insights like:
+
+“Customer table has 8% missing emails.”
+
+“Order data stopped updating for 6 hours.”
+
+“Duplicate orders increased this week.”
+
+This shows data governance awareness.
