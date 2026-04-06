@@ -132,3 +132,11 @@ Conclusion
 ----------
 
 DQMS provides a complete end-to-end solution for monitoring data quality using Python, SQL, and Power BI. It ensures automated validation, persistent logging, and visualization of key metrics. Implementing DQMS in pipelines improves data governance, reliability, and confidence in analytics outputs, making it a valuable framework for businesses relying on clean and accurate data.
+
+<img width="706" height="647" alt="image" src="https://github.com/user-attachments/assets/676ce52e-37a8-4ea7-b17b-0d0a95d637a3" />
+
+<img width="879" height="656" alt="image" src="https://github.com/user-attachments/assets/479ebb8e-46e0-45c2-a153-42558347c895" />
+
+
+
+
